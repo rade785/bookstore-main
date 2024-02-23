@@ -1,0 +1,36 @@
+.disNone {
+  display: none;
+}
+
+.modalNew {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.modalContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.modalContent::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+}
